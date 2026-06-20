@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เหล้า หลู้ ลาบ - คาเฟ่นมสดและบิงซูสุดฮิต</title>
+    <meta name="description" content="เหล้า หลู้ ลาบ คาเฟ่สุดชิคสำหรับวัยรุ่น มีเมนูหลากหลาย ครบจบในร้านเดียว ทั้งนมสด บิงซู โทสต์ และอาหารทานเล่น">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="เหล้า หลู้ ลาบ โลโก้">
+            </a>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" data-i18n="nav-home">หน้าแรก</a></li>
+                    <li><a href="#menu" data-i18n="nav-menu">เมนูของเรา</a></li>
+                    <li><a href="#gallery" data-i18n="nav-gallery">บรรยากาศร้าน</a></li>
+                    <li><a href="#contact" data-i18n="nav-contact">ติดต่อเรา</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="th">TH</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="animate-up" data-i18n="hero-title">เหล้า หลู้ ลาบ<br><span class="highlight">อร่อยฟิน ทุกเมนู</span></h1>
+            <p class="animate-up delay-1" data-i18n="hero-subtitle">คาเฟ่สุดชิคขวัญใจวัยรุ่น มีเมนูหลากหลาย ครบจบในร้านเดียว ทั้งนมสด บิงซู โทสต์ และอาหารทานเล่น</p>
+            <button class="cta-button animate-up delay-2" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})" data-i18n="hero-btn">ดูเมนูทั้งหมด <i class="fas fa-arrow-down"></i></button>
+        </div>
+    </header>
+
+    <section class="campaign-banner" style="padding: 3rem 0 0 0; text-align: center;">
+        <div class="container">
+            <img src="../ไทยช่วยไทย.jpg" alt="ไทยช่วยไทย พลัส 60/40" style="max-width: 100%; width: 600px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="menu-title">เมนูไฮไลท์</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all" data-i18n="filter-all">ทั้งหมด</button>
+                <button class="filter-btn" data-filter="milk" data-i18n="filter-milk">นมสด</button>
+                <button class="filter-btn" data-filter="bingsu" data-i18n="filter-bingsu">บิงซู</button>
+                <button class="filter-btn" data-filter="toast" data-i18n="filter-toast">โทสต์</button>
+                <button class="filter-btn" data-filter="snack" data-i18n="filter-snack">ของทานเล่น</button>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-card toast">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/44318093_775478239458207_3282462492936110080_n.jpg" alt="ปังปิ้งราดช็อกโกแลต">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-1-name">ปังปิ้งราดช็อกโกแลต</h3>
+                        <p class="price">45.-</p>
+                    </div>
+                </div>
+                <div class="menu-card snack">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/44342331_775477832791581_5534039281854578688_n.jpg" alt="เซ็ทของทอดรวมมิตร">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-2-name">เซ็ทของทอดรวมมิตร</h3>
+                        <p class="price">79.-</p>
+                    </div>
+                </div>
+                <div class="menu-card toast">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/492412841_2527023350970345_4918805182070823305_n.jpg" alt="ปังปิ้งแยมส้ม">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-3-name">ปังปิ้งแยมส้ม</h3>
+                        <p class="price">35.-</p>
+                    </div>
+                </div>
+                <div class="menu-card bingsu">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/492846847_2529634777375869_7035050521733813971_n.jpg" alt="บิงซูภูเขาไฟ">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-4-name">บิงซูภูเขาไฟ</h3>
+                        <p class="price">159.-</p>
+                    </div>
+                </div>
+                <div class="menu-card snack">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/492942909_2528367987502548_811911000064678643_n.jpg" alt="เฟรนช์ฟรายส์ดิปปิ้ง">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-5-name">เฟรนช์ฟรายส์ดิปปิ้ง</h3>
+                        <p class="price">69.-</p>
+                    </div>
+                </div>
+                <div class="menu-card milk">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/493473120_2528534147485932_1438962868243656304_n.jpg" alt="นมชมพูเย็น">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-6-name">นมชมพูเย็น</h3>
+                        <p class="price">40.-</p>
+                    </div>
+                </div>
+                <div class="menu-card toast">
+                    <div class="card-img">
+                        <img src="../เมนูร้าน/493540617_2527023530970327_8570458719034524791_n.jpg" alt="ปังปิ้งไมโลช็อกโกแลต">
+                    </div>
+                    <div class="card-content">
+                        <h3 data-i18n="menu-7-name">ปังปิ้งไมโลช็อกโกแลต</h3>
+                        <p class="price">55.-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="gallery-title">บรรยากาศชิลๆ</h2>
+            <div class="gallery-grid">
+                <img src="../บรรยากาศในร้าน/461514505_2344750892530926_8616067714999523478_n.jpg" alt="บรรยากาศร้าน 1" class="gallery-item item-1">
+                <img src="../บรรยากาศในร้าน/492518988_2527277434278270_2006123765050258299_n.jpg" alt="บรรยากาศร้าน 2" class="gallery-item item-2">
+                <img src="../บรรยากาศในร้าน/492549908_2527277360944944_1235157329857653281_n.jpg" alt="บรรยากาศร้าน 3" class="gallery-item item-3">
+                <img src="../บรรยากาศในร้าน/493940943_2527267730945907_8741123150059989016_n.jpg" alt="บรรยากาศร้าน 4" class="gallery-item item-4">
+                <img src="../บรรยากาศในร้าน/494147542_2529628654043148_5498278050551664507_n.jpg" alt="บรรยากาศร้าน 5" class="gallery-item item-5">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <img src="assets/logo.png" alt="เหล้า หลู้ ลาบ โลโก้" class="footer-logo">
+                <p data-i18n="footer-desc">ความอร่อยที่ลงตัว นมสดแท้ 100% พร้อมเมนูขนมหวานมากมาย ที่เหล้า หลู้ ลาบ</p>
+            </div>
+            <div class="footer-contact">
+                <h3 data-i18n="footer-contact-title">ติดต่อเรา</h3>
+                <ul>
+                    <li data-i18n="footer-address"><i class="fas fa-map-marker-alt"></i> 123 ซอยมหาวิทยาลัย ถ.สุขุมวิท กรุงเทพฯ</li>
+                    <li data-i18n="footer-phone"><i class="fas fa-phone-alt"></i> 081-234-5678</li>
+                    <li data-i18n="footer-hours"><i class="fas fa-clock"></i> เปิดทุกวัน 11:00 - 23:00 น.</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 data-i18n="footer-social-title">ติดตามเราได้ที่</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kwhosp10968/?locale=th_TH" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer-copyright">&copy; 2026 เหล้า หลู้ ลาบ. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
